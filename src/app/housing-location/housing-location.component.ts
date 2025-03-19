@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {HousingLocation} from '../housinglocation';
 
 
 @Component({
@@ -9,4 +11,6 @@ import { Component } from '@angular/core';
 })
 export class HousingLocationComponent {
 
+  @Input() housingLocation!: HousingLocation;
+  
 }
